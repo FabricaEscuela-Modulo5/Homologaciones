@@ -34,15 +34,5 @@ jobs:
       run: ./gradlew build
 
     - name: Run JUnit tests
-      run: |
-        ./gradlew test
-        test_result=$?
-        if [ $test_result -ne 0 ]; then
-          echo "Tests failed with exit code $test_result"
-          exit $test_result
-        fi
-
-    - name: Fail CI if build failed
-        run: node .github/workflows/fail-if-build-failed.js
-        env:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+      run: ./gradlew test
+        
