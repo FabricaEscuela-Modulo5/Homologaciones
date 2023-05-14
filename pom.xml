@@ -87,7 +87,7 @@
         <jib-maven-plugin.architecture>amd64</jib-maven-plugin.architecture>
         <lifecycle-mapping.version>1.0.0</lifecycle-mapping.version>
         <properties-maven-plugin.version>1.1.0</properties-maven-plugin.version>
-
+        <sonar-maven-plugin.version>3.9.1.2184</sonar-maven-plugin.version>
         <sonar.organization>fabricaescuela-modulo5</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <!-- jhipster-needle-maven-property -->
