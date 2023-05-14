@@ -43,4 +43,6 @@ jobs:
         fi
 
     - name: Fail CI if build failed
-      uses: actions/fail-if-build-failed@v1
+        run: node .github/actions/fail-if-build-failed.js
+        env:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
