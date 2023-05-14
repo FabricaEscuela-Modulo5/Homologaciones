@@ -27,13 +27,7 @@ public class EstadoSemestre implements Serializable {
     @Column(name = "state_semestre")
     private String stateSemestre;
 
-    @OneToMany(mappedBy = "estadoSemestre")
-    @JsonIgnoreProperties(value = { "materiaSemestres", "historiaAcademicas", "tipoSemestre", "estadoSemestre" }, allowSetters = true)
-    private Set<Semestre> semestres = new HashSet<>();
 
-    @OneToMany(mappedBy = "estadoSemestre")
-    @JsonIgnoreProperties(value = { "estudiante", "semestre", "situacionAcademica", "tercio", "estadoSemestre" }, allowSetters = true)
-    private Set<HistoriaAcademica> historiaAcademicas = new HashSet<>();
 
     // jhipster-needle-entity-add-field - JHipster will add fields here
 
